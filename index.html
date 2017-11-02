@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Form validation</title>
+        <title>Form Validation</title>
     </head>
     <body>
-        <h2 align='center'>FORM VALIDATION</h2>
-        <form name="myForm">
+        <h2 align="center">Form Validation</h2>
+         <form name="myForm">
             <table border='1' align='center'>
                 <tr><td> Name:</td><td><input type='text' id="Name"></td></tr>
                 <tr><td>Email</td><td><input type="text" id="Email"></td></tr>
@@ -31,84 +31,6 @@
         <p align='center'>Email:<span id="display_email"></span></p>
         <p align='center'>Zip code:<span id='display_zip'></span></p>
         <p align='center'>Country:<span id="display_country"></span></p>
-          <script type='text/javascript'>
-            <!--
-            window.onerror=function(msg,url,line)   //setting browser reaction after error occurs..
-            {
-            document.write('Message:'+msg);
-            document.write('<br>URL:'+url);
-            document.write('<br>Line:'+line);
-            }
-            
-           
-            function validate()
-            {
-             var n=document.getElementById('Name');    //retrieving values from textfields..
-             var id=document.getElementById('Email');
-             var z=document.getElementById('Zip');
-             var coun=document.getElementById('Country');
-             
-            if(document.myForm.Name.value=='')
-            {
-                alert('please provide your name!!');
-                document.myForm.Name.focus();
-                return false;
-            }
-            else
-            {
-             var n=document.getElementById('Name').value;
-                display_message.innerHTML=n;
-                Name.disabled=true;
-            }
-            
-             if(document.myForm.Email.value=='')
-            {
-                alert('please provide your Email!!');
-                document.myForm.Email.focus();
-                return false;
-            }
-            else
-            {
-             var id=document.getElementById('Email').value;
-                display_email.innerHTML=id;
-                Email.disabled=true;
-            }
-            
-            if(document.myForm.Zip.value==''||isNaN(document.myForm.Zip.value)||document.myForm.Zip.value.length!=6)
-            {
-                alert('please provide your Zip Code!!');
-                document.myForm.Zip.focus();
-                return false;
-            }
-            else
-            {
-             var z=document.getElementById('Zip').value;
-                display_zip.innerHTML=z;
-                Zip.disabled=true;
-            }
-            
-            if(document.myForm.Country.value=='0')
-            {
-                alert('please provide your country name!!');
-                document.myForm.Country.focus();
-                return false;
-            }
-            else
-            {
-             var coun=document.getElementById('Country').value;
-                display_country.innerHTML=coun;
-                Country.disabled=true;
-            }
-            }
-            
-            function Reset()
-            {//enabling the disabled textField..
-            Name.disabled=false;
-            Email.disabled=false;
-            Zip.disabled=false;
-            Country.disabled=false;
-            }
-            //-->
-        </script>
+        <script src="myscript.js"></script>
     </body>
 </html>
